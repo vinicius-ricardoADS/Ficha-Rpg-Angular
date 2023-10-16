@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { RegisterPageComponent } from './register-page/register-page.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './home-page/header/header.component';
 
@@ -12,7 +11,6 @@ import { HeaderComponent } from './home-page/header/header.component';
   declarations: [
     AppComponent,
     HomePageComponent,
-    RegisterPageComponent,
     HeaderComponent
   ],
   imports: [
