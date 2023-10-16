@@ -1,0 +1,62 @@
+.header {
+    background-color: #78BEFF;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.img-brand {
+    width: 111px;
+    height: 67px;
+}
+
+.title-brand {
+    width: 61px;
+    color: #28009A;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Ribeye Marrow', serif;
+}
+
+.anchor {
+    list-style: none;
+    text-decoration: none;
+}
+
+.anchor-typo {
+    width: 135px;
+    height: 29px;
+    flex-shrink: 0;
+    color: #2B00A5;
+    font-family: 'Ribeye Marrow', serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.anchor-typo:hover {
+    color: white;
+}
+
+.brand {
+    display: flex;
+    margin-left: 92px;
+    margin-top: 16px;
+    align-items: center;
+}
+
+.anchor-register {
+    margin-top: 25px;
+    margin-right: 230px;
+}
+
+.flex-brand {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
