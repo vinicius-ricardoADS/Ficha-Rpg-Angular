@@ -30,7 +30,8 @@ export class FormComponent {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(this.formData),
-    }).then((res) => res.status === 200 ? this.clearFields() : alert('Erro'));
+    });
+    this.clearFields();
   }
 
   clearFields() {
