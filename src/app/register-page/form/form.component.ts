@@ -23,7 +23,6 @@ export class FormComponent {
   }
 
   async onSubmit() {
-    console.log(this.formData);
     await fetch('http://localhost:3000/chips', {
       method: 'post',
       headers: {
@@ -31,7 +30,18 @@ export class FormComponent {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(this.formData),
-    });
+    }).then((res) => res.status === 200 ? this.clearFields() : alert('Erro'));
+  }
+
+  clearFields() {
+    this.formData.ability = undefined;
+    this.formData.armor = undefined;
+    this.formData.fire_power = undefined;
+    this.formData.name = undefined;
+    this.formData.class = undefined;
+    this.formData.race = undefined;
+    this.formData.experience_points = undefined;
+    this.formData.strength = undefined;
   }
 
 }
