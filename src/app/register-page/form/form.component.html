@@ -1,49 +1,50 @@
-<form class="form-container">
+<form (ngSubmit)="onSubmit()" class="form-container">
     <div class="mg-tb-50">
         <h2 class="title">Ficha</h2>
     </div>
     <div class="input-container-flex">
         <div class="label-float">
-            <input name='strength' class="input-flex" 
-                type="text" placeholder="Força"/>
+            <input [(ngModel)]="formData.strength" name='strength' class="input-flex" 
+                type="number" placeholder="Força"/>
         </div>
         <div class="label-float">
-            <input name='ability' class="input-flex" 
+            <input [(ngModel)]="formData.ability" name='ability' class="input-flex" 
                 type="text" placeholder="Habilidade"/>
         </div>
     </div>
     <div class="input-container-flex">
         <div class="label-float">
-            <input name='armor' class="input-flex" 
+            <input [(ngModel)]="formData.armor" name='armor' class="input-flex" 
                 type="number" placeholder="Armadura"/>
         </div>
         <div class="label-float">
-            <input name='fire_power' class="input-flex" 
+            <input [(ngModel)]="formData.fire_power" name='fire_power' class="input-flex" 
                 type="number" placeholder="Poder de Fogo"/>
         </div>
     </div>
     <div class="input-container-flex">
         <div class="label-float">
-            <input name='class' class="input-flex" 
+            <input [(ngModel)]="formData.class" name='class' class="input-flex" 
                 type="text" placeholder="Classe"/>
         </div>
         <div class="label-float">
-            <input name='race' class="input-flex" 
+            <input [(ngModel)]="formData.race" name='race' class="input-flex" 
                 type="text" placeholder="Raça"/>
         </div>
     </div>
     <div class="input-container-flex">
         <div class="label-float">
-            <input name='name' class="input-flex" 
+            <input [(ngModel)]="formData.name" name='name' class="input-flex" 
                 type="text" placeholder="Nome"/>
         </div>
         <div class="label-float">
-            <input name='experience_points' class="input-flex" 
+            <input [(ngModel)]="formData.experience_points" name='experience_points' class="input-flex" 
                 type="number" placeholder="Pontos de Experiência"/>
         </div>
     </div>
     <div>
         <button
+        type="submit"
         class="btn-save">
             Registrar
         </button>
