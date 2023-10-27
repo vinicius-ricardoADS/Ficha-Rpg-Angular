@@ -1,15 +1,26 @@
 {
-    "chips": [
-        {
-            "id": 1,
-            "strength": 5,
-            "ability": "Heroica",
-            "armor": 6,
-            "fire_power": 9,
-            "class": "Necromante",
-            "race": "Humano",
-            "name": "Relfryin",
-            "experience_points": 7
-        }
-    ]
+  "chips": [
+    {
+      "id": 1,
+      "strength": 5,
+      "ability": "Heroica",
+      "armor": 6,
+      "fire_power": 9,
+      "class": "Necromante",
+      "race": "Humano",
+      "name": "Relfryin",
+      "experience_points": 7
+    },
+    {
+      "strength": 5,
+      "ability": "Saquear",
+      "armor": 10,
+      "fire_power": 3,
+      "class": "Necromante",
+      "race": "Humano",
+      "name": "Sylas",
+      "experience_points": 7,
+      "id": 2
+    }
+  ]
 }

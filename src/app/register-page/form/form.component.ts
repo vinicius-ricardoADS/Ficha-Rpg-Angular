@@ -22,8 +22,16 @@ export class FormComponent {
   constructor() {
   }
 
-  onSubmit() {
+  async onSubmit() {
     console.log(this.formData);
+    await fetch('http://localhost:3000/chips', {
+      method: 'post',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(this.formData),
+    });
   }
 
 }
