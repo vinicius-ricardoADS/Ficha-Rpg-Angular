@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { PropertysForms } from './type';
+import { HttpClient } from '@angular/common/http';
+import { Chips, PropertysForms } from '../../utils/type';
 
 @Component({
   selector: 'app-form',
@@ -8,7 +9,7 @@ import { PropertysForms } from './type';
 })
 export class FormComponent {
 
-  formData: PropertysForms = {
+  chip: PropertysForms = {
     strength: undefined,
     ability: undefined,
     armor: undefined,
@@ -19,30 +20,25 @@ export class FormComponent {
     experience_points: undefined,
   }
 
-  constructor() {
-  }
+  constructor(private http: HttpClient) {}
 
   async onSubmit() {
-    await fetch(`http://localhost:3000/chips`, {
-      method: 'post',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(this.formData),
+    this.http.post<Chips>('http://localhost:3000/chips', this.chip).subscribe(newChip => {
+      // Lidar com a resposta, se necessário.
+      console.log('Novo chip adicionado:', newChip);
     });
     this.clearFields();
   }
 
   clearFields() {
-    this.formData.ability = undefined;
-    this.formData.armor = undefined;
-    this.formData.fire_power = undefined;
-    this.formData.name = undefined;
-    this.formData.class = undefined;
-    this.formData.race = undefined;
-    this.formData.experience_points = undefined;
-    this.formData.strength = undefined;
+    this.chip.ability = undefined;
+    this.chip.armor = undefined;
+    this.chip.fire_power = undefined;
+    this.chip.name = undefined;
+    this.chip.class = undefined;
+    this.chip.race = undefined;
+    this.chip.experience_points = undefined;
+    this.chip.strength = undefined;
   }
 
 }

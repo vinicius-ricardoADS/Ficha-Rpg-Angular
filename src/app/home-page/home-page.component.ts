@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Chips } from './type';
+import { Chips } from '../utils/type';
 
 @Component({
   selector: 'app-home-page',

@@ -21,6 +21,20 @@
       "name": "Helheim",
       "experience_points": 21,
       "id": 2
+<<<<<<< HEAD
+=======
+    },
+    {
+      "strength": 15,
+      "ability": "Ataque furtivo",
+      "armor": 5,
+      "fire_power": 0,
+      "class": "Assassino",
+      "race": "Humano",
+      "name": "Grindelward",
+      "experience_points": 10,
+      "id": 3
+>>>>>>> f4f4dd786d59d1df5065c98db665b92691ba7c1a
     }
   ]
 }
