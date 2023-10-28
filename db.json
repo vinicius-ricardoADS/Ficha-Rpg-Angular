@@ -1,15 +1,112 @@
 {
-    "chips": [
-        {
-            "id": 1,
-            "strength": 5,
-            "ability": "Heroica",
-            "armor": 6,
-            "fire_power": 9,
-            "class": "Necromante",
-            "race": "Humano",
-            "name": "Relfryin",
-            "experience_points": 7
-        }
-    ]
+  "chips": [
+    {
+      "id": 1,
+      "strength": 5,
+      "ability": "Heroica",
+      "armor": 6,
+      "fire_power": 9,
+      "class": "Necromante",
+      "race": "Humano",
+      "name": "Relfryin",
+      "experience_points": 7
+    },
+    {
+      "strength": 5,
+      "ability": "Saquear",
+      "armor": 10,
+      "fire_power": 3,
+      "class": "Necromante",
+      "race": "Humano",
+      "name": "Sylas",
+      "experience_points": 7,
+      "id": 2
+    },
+    {
+      "strength": 10,
+      "ability": "Sla2",
+      "armor": 10,
+      "fire_power": 10,
+      "class": "Sla32",
+      "race": "Sla021",
+      "name": "Slas0921",
+      "experience_points": 10,
+      "id": 3
+    },
+    {
+      "strength": 10,
+      "ability": "Sla",
+      "armor": 10,
+      "fire_power": 10,
+      "class": "Sla32",
+      "race": "S",
+      "id": 4
+    },
+    {
+      "strength": 10,
+      "ability": "Sla",
+      "armor": 10,
+      "fire_power": 10,
+      "class": "Sla32",
+      "race": "Sla021",
+      "name": "Vinícius Ricardo Rosa Noli",
+      "experience_points": 10,
+      "id": 5
+    },
+    {
+      "strength": 10,
+      "ability": "Sla",
+      "armor": 10,
+      "fire_power": 10,
+      "class": "Necromante",
+      "race": "Humano",
+      "name": "Vinícius Ricardo Rosa Noli",
+      "experience_points": 10,
+      "id": 6
+    },
+    {
+      "strength": 10,
+      "ability": "Sla",
+      "armor": 10,
+      "fire_power": 10,
+      "class": "Slasalkas",
+      "race": "aslakdkas",
+      "name": "salkasdlk",
+      "experience_points": 10,
+      "id": 7
+    },
+    {
+      "strength": 10,
+      "ability": "SLAKLk",
+      "armor": 10,
+      "fire_power": 10,
+      "class": "alskal",
+      "race": "aslkadsl",
+      "name": "aslkdal",
+      "experience_points": 10,
+      "id": 8
+    },
+    {
+      "strength": 5,
+      "ability": "Sla",
+      "armor": 1,
+      "fire_power": 1,
+      "class": "Necromante",
+      "race": "Humano",
+      "name": "Vinícius Ricardo Rosa Noli",
+      "experience_points": 1,
+      "id": 9
+    },
+    {
+      "strength": 2,
+      "ability": "H",
+      "armor": 2,
+      "fire_power": 2,
+      "class": "h",
+      "race": "h",
+      "name": "h",
+      "experience_points": 2,
+      "id": 10
+    }
+  ]
 }
