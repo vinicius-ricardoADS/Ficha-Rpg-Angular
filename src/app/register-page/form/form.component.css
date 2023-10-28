@@ -3,7 +3,7 @@
     height: 592px;
     z-index: 1;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #bd8b53;
+    background-color: #EFFC9F;
     align-items: center;
     border-radius: 0.5rem;
     display: flex;
@@ -21,9 +21,9 @@
     height: 49px;
     outline: none;
     margin: 5px;
-    border-style: none;
+    border-style: dotted;
     border-radius: 8px;
-    background-color: #deb887;
+    background-color: #ffffff54;
     font-family: 'Ribeye Marrow', serif;
     font-size: 16px;
     color: #000000;
@@ -71,11 +71,11 @@ input:focus {
     width: 114px;
     height: 38px;
     border-radius: 0.5rem;
-    border-style: none;
+    border-style: dotted;
     font-family: 'Ribeye Marrow', serif;
     font-size: 16px;
     color: black;
-    background-color: #f9c78b;
+    background-color: #ffffff54;
 }
 
 .btn-save:hover {
