@@ -21,8 +21,6 @@
       "name": "Helheim",
       "experience_points": 21,
       "id": 2
-<<<<<<< HEAD
-=======
     },
     {
       "strength": 15,
@@ -34,7 +32,6 @@
       "name": "Grindelward",
       "experience_points": 10,
       "id": 3
->>>>>>> f4f4dd786d59d1df5065c98db665b92691ba7c1a
     }
   ]
 }

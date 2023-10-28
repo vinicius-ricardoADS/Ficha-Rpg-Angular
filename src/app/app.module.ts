@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './home-page/header/header.component';
 import { FormComponent } from './register-page/form/form.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
+import { CardsComponent } from './home-page/cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { RegisterPageComponent } from './register-page/register-page.component';
     HeaderComponent,
     RegisterPageComponent,
     FormComponent,
+    CardsComponent,
   ],
   imports: [
     BrowserModule,
