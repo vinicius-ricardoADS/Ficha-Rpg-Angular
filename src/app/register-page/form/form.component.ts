@@ -23,7 +23,7 @@ export class FormComponent {
   }
 
   async onSubmit() {
-    await fetch('http://localhost:3000/chips', {
+    await fetch(`http://localhost:3000/chips`, {
       method: 'post',
       headers: {
         Accept: 'application/json',
