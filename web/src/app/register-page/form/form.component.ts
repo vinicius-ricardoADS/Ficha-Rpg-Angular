@@ -24,10 +24,10 @@ export class FormComponent {
 
   async onSubmit() {
     this.http.post<Chips>('http://localhost:3000/chips', this.chip).subscribe(newChip => {
-      // Lidar com a resposta, se necessário.
-      console.log('Novo chip adicionado:', newChip);
+      console.log('New chip added:', newChip);
     });
     this.clearFields();
+    window.location.href = '/';
   }
 
   clearFields() {
