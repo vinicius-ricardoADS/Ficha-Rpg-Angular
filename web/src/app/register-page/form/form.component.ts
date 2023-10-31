@@ -23,7 +23,7 @@ export class FormComponent {
   constructor(private http: HttpClient) {}
 
   async onSubmit() {
-    this.http.post<Chips>('http://localhost:3000/chips', this.chip).subscribe(newChip => {
+    this.http.post<Chips>('http://localhost:3333/chip', this.chip).subscribe(newChip => {
       console.log('New chip added:', newChip);
     });
     this.clearFields();

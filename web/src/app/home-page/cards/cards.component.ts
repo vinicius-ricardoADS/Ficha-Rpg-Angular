@@ -14,7 +14,7 @@ export class CardsComponent implements OnInit {
   constructor(private http: HttpClient){}
 
   ngOnInit(): void {
-    this.http.get<Chips[]>('http://localhost:3000/chips').subscribe(chips => {
+    this.http.get<Chips[]>('http://localhost:3333/chip').subscribe(chips => {
       this.chips = chips;
     });
   }

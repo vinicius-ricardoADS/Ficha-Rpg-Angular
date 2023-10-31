@@ -53,7 +53,19 @@ export async function chipsRoutes(app: FastifyInstance) {
             },
         });
 
-        if (chips.length > 0) reply.status(200).send( chips );
+        if (chips.length > 0) reply.status(200).send(chips.map((chip) => {
+            return {
+                id: chip.id,
+                strength: chip.strength,
+                ability: chip.ability,
+                armor: chip.armor,
+                fire_power: chip.fire_power,
+                class: chip.class,
+                race: chip.race,
+                name: chip.name,
+                experience_points: chip.experience_points
+            }
+        }));
 
         reply.status(205).send({
             message: 'Nothing found'
