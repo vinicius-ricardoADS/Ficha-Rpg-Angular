@@ -18,4 +18,8 @@ export class CardsComponent implements OnInit {
       this.chips = chips;
     });
   }
+
+  deletarFicha(){
+    this.http.delete<Chips>('http://localhost:3333/chip');
+  }
 }

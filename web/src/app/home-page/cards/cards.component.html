@@ -32,7 +32,7 @@
                     <button class="btn-edit" [id]="chip.id">Editar</button>
                 </td>
                 <td>
-                    <button class="btn-remove" [id]="chip.id">Deletar</button>
+                    <button (click)="deletarFicha" class="btn-remove" [id]="chip.id">Deletar</button>
                 </td>
             </tr>
         </tfoot>
