@@ -5,14 +5,14 @@ import { z } from 'zod';
 export async function chipsRoutes(app: FastifyInstance) {
     app.post('/chip', async (request, reply) => {
         const bodySchema = z.object({
-            strength: z.number(),
+            strength: z.string().transform(strength => Number(strength)),
             ability: z.string(),
-            armor: z.number(),
-            fire_power: z.number(),
+            armor: z.string().transform(armor => Number(armor)),
+            fire_power: z.string().transform(fire_power => Number(fire_power)),
             classes: z.string(),
             race: z.string(),
             name: z.string(),
-            experience_points: z.number(),
+            experience_points: z.string().transform(experience_points => Number(experience_points)),
         });
 
         const {
@@ -74,7 +74,7 @@ export async function chipsRoutes(app: FastifyInstance) {
 
     app.delete('/chip/:id', async (request, reply) => {
         const paramsSchema = z.object({
-            id: z.number(),
+            id: z.string().transform(id => Number(id)),
         });
 
         const { id } = paramsSchema.parse(request.params);

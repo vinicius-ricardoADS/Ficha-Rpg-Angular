@@ -19,7 +19,16 @@ export class CardsComponent implements OnInit {
     });
   }
 
-  deletarFicha(){
-    this.http.delete<Chips>('http://localhost:3333/chip');
+  deletarFicha(id: number){
+    this.http.delete<Chips>(`http://localhost:3333/chip/${id.toString()}`).subscribe(
+      (response) => {
+        console.log('Ficha deletada com sucesso', response);
+        this.ngOnInit();
+      },
+      (error) => {
+        console.error('Erro ao deletar ficha', error);
+      }
+    )
+    ;
   }
 }
