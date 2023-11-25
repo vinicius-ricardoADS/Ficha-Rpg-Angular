@@ -1,0 +1,84 @@
+.form-container {
+    width: 650px;
+    height: 592px;
+    z-index: 1;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #EFFC9F;
+    align-items: center;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container-flex {
+    position: relative;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.input-flex {
+    height: 49px;
+    outline: none;
+    margin: 5px;
+    border-style: dotted;
+    border-radius: 8px;
+    background-color: #ffffff54;
+    font-family: 'Ribeye Marrow', serif;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding-left: 12px;
+}
+
+input:focus {
+    box-shadow: none;
+}
+
+.label-float label{
+    pointer-events: none;
+    position: absolute;
+    margin-left: 15px;
+    top: 0;
+    left: 0;
+    margin-top: 15px;
+    transition: all .3s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label{
+  font-size: 13px;
+  margin-top: 0;
+  border-color: none;
+}
+
+.title {
+    font-family: 'Ribeye Marrow', serif;
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 0px;
+}
+
+.mg-tb-50 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-save {
+    width: 114px;
+    height: 38px;
+    border-radius: 0.5rem;
+    border-style: dotted;
+    font-family: 'Ribeye Marrow', serif;
+    font-size: 16px;
+    color: black;
+    background-color: #ffffff54;
+}
+
+.btn-save:hover {
+    background-color: rgb(184, 255, 143);
+    cursor: pointer;
+}

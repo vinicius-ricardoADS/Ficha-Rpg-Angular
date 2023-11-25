@@ -1,0 +1,52 @@
+<form (ngSubmit)="onSubmit()" class="form-container">
+    <div class="mg-tb-50">
+        <h2 class="title">Ficha</h2>
+    </div>
+    <div class="input-container-flex">
+        <div class="label-float">
+            <input [(ngModel)]="chip.strength" name='strength' class="input-flex" 
+                type="text" placeholder="Força"/>
+        </div>
+        <div class="label-float">
+            <input [(ngModel)]="chip.ability" name='ability' class="input-flex" 
+                type="text" placeholder="Habilidade"/>
+        </div>
+    </div>
+    <div class="input-container-flex">
+        <div class="label-float">
+            <input [(ngModel)]="chip.armor" name='armor' class="input-flex" 
+                type="text" placeholder="Armadura"/>
+        </div>
+        <div class="label-float">
+            <input [(ngModel)]="chip.fire_power" name='fire_power' class="input-flex" 
+                type="text" placeholder="Poder de Fogo"/>
+        </div>
+    </div>
+    <div class="input-container-flex">
+        <div class="label-float">
+            <input [(ngModel)]="chip.classes" name='classes' class="input-flex" 
+                type="text" placeholder="Classe"/>
+        </div>
+        <div class="label-float">
+            <input [(ngModel)]="chip.race" name='race' class="input-flex" 
+                type="text" placeholder="Raça"/>
+        </div>
+    </div>
+    <div class="input-container-flex">
+        <div class="label-float">
+            <input [(ngModel)]="chip.name" name='name' class="input-flex" 
+                type="text" placeholder="Nome"/>
+        </div>
+        <div class="label-float">
+            <input [(ngModel)]="chip.experience_points" name='experience_points' class="input-flex" 
+                type="text" placeholder="Pontos de Experiência"/>
+        </div>
+    </div>
+    <div>
+        <button
+        type="submit"
+        class="btn-save">
+            Registrar
+        </button>
+    </div>
+</form>

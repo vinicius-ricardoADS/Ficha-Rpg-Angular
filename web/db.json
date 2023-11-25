@@ -1,0 +1,48 @@
+{
+  "chips": [
+    {
+      "id": 1,
+      "strength": 5,
+      "ability": "Heroica",
+      "armor": 6,
+      "fire_power": 9,
+      "class": "Necromante",
+      "race": "Humano",
+      "name": "Relfryin",
+      "experience_points": 7
+    },
+    {
+      "strength": 4,
+      "ability": "Curar",
+      "armor": 11,
+      "fire_power": 0,
+      "class": "Suporte",
+      "race": "Elfo",
+      "name": "Helheim",
+      "experience_points": 21,
+      "id": 2
+    },
+    {
+      "strength": 15,
+      "ability": "Ataque furtivo",
+      "armor": 5,
+      "fire_power": 0,
+      "class": "Assassino",
+      "race": "Humano",
+      "name": "Grindelward",
+      "experience_points": 10,
+      "id": 3
+    },
+    {
+      "strength": 5,
+      "ability": "Fogo",
+      "armor": 3,
+      "fire_power": 11,
+      "class": "Mago",
+      "race": "Humano",
+      "name": "Luiz",
+      "experience_points": 15,
+      "id": 4
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+<div *ngFor="let chip of chips">
+    <table class="container">
+        <tbody>
+            <tr>
+                <td class="font-th bd-1 bd-rigth-1">
+                    <p class="pd-7">Classe</p>
+                </td>
+                <td class="font bd-1">
+                    <p class="pd-14">{{ chip.class }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="font-th bd-1 bd-rigth-1">
+                    <p class="pd-7">Raça</p>
+                </td>
+                <td class="font bd-1">
+                    <p class="pd-14">{{ chip.race }}</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="font-th bd-1 bd-rigth-1">
+                    <p class="pd-7">Nome</p>
+                </td>
+                <td class="font bd-1">
+                    <p class="pd-14">{{ chip.name }}</p>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    <button class="btn-edit" (click)="editarFicha(chip.id)">Editar</button>
+                </td>
+                <td>
+                    <button (click)="deletarFicha(chip.id)" class="btn-remove" [id]="chip.id">Deletar</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
