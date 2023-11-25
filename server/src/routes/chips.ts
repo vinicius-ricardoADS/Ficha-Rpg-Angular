@@ -46,6 +46,28 @@ export async function chipsRoutes(app: FastifyInstance) {
         })
     });
 
+    app.get('/chip/:id', async (request, reply) => {
+        const paramShema = z.object({
+            id: z.string().transform(id => Number(id)),
+        });
+
+        const { id } = paramShema.parse(request.params);
+
+        const product = await prisma.chip.findUniqueOrThrow({
+            where: {
+                id
+            }
+        });
+
+        if (product) {
+            reply.status(200).send(product);
+        } else {
+            reply.status(400).send({
+                message: 'Not found'
+            })
+        }
+    })
+
     app.get('/chip', async (request, reply) => {
         const chips = await prisma.chip.findMany({
             orderBy: {
@@ -96,20 +118,20 @@ export async function chipsRoutes(app: FastifyInstance) {
 
     app.put('/chip/:id', async (request, reply) => {
         const paramsSchema = z.object({
-            id: z.number(),
+            id: z.string().transform(id => Number(id)),
         });
 
         const { id } = paramsSchema.parse(request.params);
         
         const bodySchema = z.object({
-            strengthEntered: z.number(),
+            strengthEntered: z.string().transform(id => Number(id)),
             abilityEntered: z.string(),
-            armorEntered: z.number(),
-            fire_powerEntered: z.number(),
+            armorEntered: z.string().transform(id => Number(id)),
+            fire_powerEntered: z.string().transform(id => Number(id)),
             classEntered: z.string(),
             raceEntered: z.string(),
             nameEntered: z.string(),
-            experience_pointsEntered: z.number()
+            experience_pointsEntered: z.string().transform(id => Number(id))
         });
 
         const {

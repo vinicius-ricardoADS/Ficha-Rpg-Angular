@@ -29,7 +29,7 @@
         <tfoot>
             <tr>
                 <td>
-                    <button class="btn-edit" [id]="chip.id">Editar</button>
+                    <button class="btn-edit" (click)="editarFicha(chip.id)">Editar</button>
                 </td>
                 <td>
                     <button (click)="deletarFicha(chip.id)" class="btn-remove" [id]="chip.id">Deletar</button>

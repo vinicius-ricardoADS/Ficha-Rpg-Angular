@@ -9,6 +9,17 @@ export type PropertysForms = {
     experience_points: string;
 }
 
+export type PropertysEditForm = {
+    strengthEntered: string;
+    abilityEntered: string
+    armorEntered: string
+    fire_powerEntered: string
+    classEntered: string
+    raceEntered: string
+    nameEntered: string
+    experience_pointsEntered: string
+}
+
 export interface Chips {
     id: number
     strength: number;

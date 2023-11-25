@@ -31,4 +31,8 @@ export class CardsComponent implements OnInit {
     )
     ;
   }
+
+  editarFicha(id: number) {
+    window.location.href = `/register/${id}`
+  }
 }
